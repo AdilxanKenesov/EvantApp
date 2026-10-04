@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Evant</string>
+
+    <string name="feature_wifi">Wi-Fi</string>
+    <string name="feature_bluetooth">Bluetooth</string>
+    <string name="feature_airplane">Airplane</string>
+    <string name="feature_internet">Internet</string>
+    <string name="feature_location">Location</string>
+    <string name="feature_charging">Charging</string>
+    <string name="feature_headset">Headset</string>
+    <string name="feature_battery_saver">Battery Saver</string>
+    <string name="feature_dnd">Do Not Disturb</string>
+    <string name="feature_silent">Silent</string>
+    <string name="feature_nfc">NFC</string>
+    <string name="feature_data_saver">Data Saver</string>
+    <string name="feature_battery_low">Battery Low</string>
+    <string name="feature_usb">USB</string>
+
+    <string name="status_on">On</string>
+    <string name="status_off">Off</string>
+    <string name="active_count">%1$d / %2$d active</string>
+    <!-- TTS aytadigan gaplar -->
+    <string name="say_wifi_on">Wi-Fi turned on</string>
+    <string name="say_wifi_off">Wi-Fi turned off</string>
+    <string name="say_bluetooth_on">Bluetooth turned on</string>
+    <string name="say_bluetooth_off">Bluetooth turned off</string>
+    <string name="say_airplane_on">Airplane mode on</string>
+    <string name="say_airplane_off">Airplane mode off</string>
+    <string name="say_internet_on">Internet connected</string>
+    <string name="say_internet_off">Internet disconnected</string>
+    <string name="say_location_on">Location turned on</string>
+    <string name="say_location_off">Location turned off</string>
+    <string name="say_charging_on">Charger connected</string>
+    <string name="say_charging_off">Charger disconnected</string>
+    <string name="say_headset_on">Headset connected</string>
+    <string name="say_headset_off">Headset disconnected</string>
+    <string name="say_battery_saver_on">Battery saver on</string>
+    <string name="say_battery_saver_off">Battery saver off</string>
+    <string name="say_dnd_on">Do not disturb on</string>
+    <string name="say_dnd_off">Do not disturb off</string>
+    <string name="say_silent_on">Silent mode on</string>
+    <string name="say_silent_off">Silent mode off</string>
+    <string name="say_nfc_on">NFC turned on</string>
+    <string name="say_nfc_off">NFC turned off</string>
+    <string name="say_data_saver_on">Data saver on</string>
+    <string name="say_data_saver_off">Data saver off</string>
+    <string name="say_battery_low_on">Battery is low</string>
+    <string name="say_battery_low_off">Battery is okay</string>
+    <string name="say_usb_on">USB connected</string>
+    <string name="say_usb_off">USB disconnected</string>
+</resources>

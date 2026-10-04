@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Hammasi "normal" ruxsatlar: install paytida avtomatik beriladi, runtime'da so'ralmaydi -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Android 11 (API 30) gacha BluetoothAdapter.isEnabled uchun kerak, 12+ da talab qilinmaydi -->
+    <uses-permission
+        android:name="android.permission.BLUETOOTH"
+        android:maxSdkVersion="30" />
+
+    <!-- Android 11+ package visibility: TextToSpeech dvigatelini topish uchun kerak -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.TTS_SERVICE" />
+        </intent>
+    </queries>
+
+    <!--
+        E'tibor bering: bu yerda <receiver> e'lon qilinmagan.
+        Barcha receiverlar MainActivity ichida kod orqali (context-registered / dynamic) ro'yxatdan o'tadi,
+        chunki Android 8+ da bu "implicit" system broadcastlarni manifest orqali qabul qilib bo'lmaydi.
+        Batafsil: receiver/BroadcastGuide.kt
+    -->
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EvantApp">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.EvantApp"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
